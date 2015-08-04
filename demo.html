@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Markov Example</title>
+	<style type="text/css">
+	textarea{
+		width:600px;
+		height:400px;
+	}
+	div{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<textarea id="box"></textarea>
+		<p><button id="load">Load text from the box</button> - <button id="generate">Generate text to the box</button>
+		<p>Settings:
+		<p>Order: <input type="number"> (The higher, the more sense the text makes)
+	</div>
+	<script src="markovChain.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event){
+			document.getElementById('load').addEventListener("click", function(){
+				markovGenerator.load(document.getElementById(''))
+			});
+			document.getElementById('generate').addEventListener()
+		});
+	</script>
+</body>
+</html>
