@@ -9,7 +9,7 @@ var markovGenerator = {
 		text = text.toLowerCase();
 		//text.replace(/[^a-z ]/, '');
 
-		for (var i = this.settings.order; i < text.length; i++){
+		for (var i = this.order; i < text.length; i++){
 			var entry = text.slice(i-this.order, i);
 			if(Array.isArray(this.table[entry])){
 				this.table[entry].push(text.charAt(i));
