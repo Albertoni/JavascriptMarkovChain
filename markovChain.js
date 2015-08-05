@@ -47,6 +47,6 @@ var markovGenerator = {
 	
 	getRandomKey:function(){
 		var possibleKeys = Object.keys(this.table);
-		return possibleKeys[randomIntFromInterval(0, possibleKeys.length)];
+		return possibleKeys[randomIntFromInterval(0, possibleKeys.length-1)];
 	}
 }
