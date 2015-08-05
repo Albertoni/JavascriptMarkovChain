@@ -25,6 +25,7 @@
 	<script>
 		document.addEventListener("DOMContentLoaded", function(event){
 			document.getElementById('load').addEventListener("click", function(){
+				markovGenerator.table = {};
 				markovGenerator.order = document.getElementById('order').value;
 				markovGenerator.load(document.getElementById('text').value);
 				
